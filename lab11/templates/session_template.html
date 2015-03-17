@@ -1,0 +1,21 @@
+<div class="{{column_size}}">
+  <div class="panel">
+    <span class="talk-title">
+
+{{#data_reveal}}
+  <a href="#" data-reveal-id="{{data_reveal}}" class="{{track}}-track">{{title}}</a>
+{{/data_reveal}}
+{{^data_reveal}}
+  {{title}}
+{{/data_reveal}}
+    </span>
+
+
+    {{#persons}}
+      <span class="talk-speaker">{{full_public_name}}</span></br>
+    {{/persons}}
+
+    <span class="session-room">{{room}}</span></br>
+
+  </div>
+</div>

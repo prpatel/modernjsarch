@@ -1,0 +1,11 @@
+{{#speakers.speakers}}
+
+<div class="large-3 columns speaker-info">
+          <img src="http://cfp.connect-js.com{{image}}" class="speaker-image" />
+          <span class="speaker-name">{{full_public_name}}</span>
+          <span class="speaker-twitter"><a href="http://twitter.com/{{twitter}}" target="_blank">{{twitter}}</a></span>
+          {{#events}}
+          <span class="speaker-name">Session: {{title}} </span>
+          {{/events}}
+</div>
+{{/speakers.speakers}}
